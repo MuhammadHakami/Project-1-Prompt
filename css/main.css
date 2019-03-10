@@ -1,0 +1,30 @@
+*{
+    background-color: #000022;
+    color: #ffffff;
+}
+
+.container{
+    margin: 10% 30%;
+    width: 60%;
+}
+.row div{
+    display: inline-block;
+    border: solid #000022 15px;
+    background-color:white;
+    width: 150px;
+    height: 150px;
+}
+
+.row{
+    display: flex;
+}
+
+.reset{
+    width: 30%;
+    font-size: 30px;
+}
+
+header{
+    margin: 2% auto -5% auto;
+    text-align: center;
+}
