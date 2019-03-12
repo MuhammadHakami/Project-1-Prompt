@@ -1,32 +1,111 @@
 body{
-    background-image: url('../assets/gif.gif');
+    background-image: url('../assets/Blue-Sea-Sky-Clouds.jpg');
     background-size: cover;
     background-position: 'center';
-
+    image-rendering: optimizeQuality;
 }
 
 .container{
-    margin: 10% 30%;
-    width: 60%;
+    margin-top: 1%;
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: nowrap;
+    justify-content: center;
+    justify-content: space-between;
 }
+
+
+img{
+    width: 30%;
+    height:30%;
+}
+
 .row div{
     display: inline-block;
-    border: solid #000022 15px;
-    background-color:white;
+    margin: 15px;
+    background-color: white;
     width: 150px;
     height: 150px;
+    background-image: url('../assets/moon_sea.jpg');
+    background-size: cover;
 }
+
 
 .row{
     display: flex;
 }
 
 .reset{
+    margin-top: 3%;
     width: 30%;
     font-size: 30px;
 }
 
+header *{
+    /* margin: 2% auto -5% auto; */
+    display: inline-block;
+}
+
 header{
-    margin: 2% auto -5% auto;
     text-align: center;
 }
+
+header .playerx{
+    margin: auto auto auto -550px;
+}
+
+header .playero{
+    margin: auto -550px auto auto;
+}
+
+/* Button Design taken from Hakim El Hattab */
+/* Reset */
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+  }
+  
+  /* Custom */
+  button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "Open Sans", Helvetica;
+    border-radius: 4px;
+    border-bottom: 1px solid rgba( 28, 227, 125, 0.5 );
+    background: rgb(142, 199, 233);
+    color: #fff;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+    
+    -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+            transform: translateZ(0);
+    
+    -webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+    background: rgba( 20, 224, 133, 1 );
+  }

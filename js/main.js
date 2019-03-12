@@ -6,14 +6,20 @@ var stateSpace={0:'',1:'',2:'',3:'',4:'',5:'',6:'',7:'',8:''};
 var winningStates=[0,3];
 
 function reset(event){
+    //document.querySelector('.playerx').innerHTML(`Player X: Scored ${score[1]}`)
+    //document.querySelector('.playero').innerHTML(`Player O: Scored ${score[2]}`)
     turn=0
     event.preventDefault()
     for (i=0;i<9;i++){
-        search[i].style.backgroundImage=null
+        search[i].style.backgroundImage=null;
+        search[i].style.backgroundPosition='left';
+        search[i].className='shake-slow';
     }
 }
 
 resButton.addEventListener('click',reset);
+
+
 
 function remove(){
     for (i=0;i<9;i++){
@@ -31,10 +37,12 @@ function run(){
                 search[i].style.backgroundImage='url(/home/shadows/Documents/wdi4/Project-1-Prompt/assets/x.jpg)';
                 search[i].style.backgroundPosition= 'center';
                 search[i].style.backgroundSize='cover';
+                search[i].className=null;
             } else {
                 search[i].style.backgroundImage='url(/home/shadows/Documents/wdi4/Project-1-Prompt/assets/o.jpeg)';
                 search[i].style.backgroundPosition='center';
                 search[i].style.backgroundSize='cover';
+                search[i].className=null;
             }
             console.log(turn);
             turn+=1;
@@ -52,6 +60,7 @@ function run(){
             score[player]+=1
             swal(`Player ${player} Won!`, `${score[1]} VS ${score[2]}`, "success");
             document.querySelector('.swal-modal .swal-button-container button').addEventListener('click',reset)
+            document.querySelector('body > div').addEventListener('click',reset)
         }
         if ('None'!==stateSpace[0] & stateSpace[0]===stateSpace[1] & stateSpace[0]===stateSpace[2]){
             match()
@@ -62,6 +71,8 @@ function run(){
         } else if ('None'!==stateSpace[4] & stateSpace[4]===stateSpace[1] & stateSpace[4]===stateSpace[7]){
             match()
         } else if ('None'!==stateSpace[4] & stateSpace[4]===stateSpace[3] & stateSpace[4]===stateSpace[5]){
+            match()
+        } else if ('None'!==stateSpace[4] & stateSpace[4]===stateSpace[2] & stateSpace[4]===stateSpace[6]){
             match()
         } else if ('None'!==stateSpace[8] & stateSpace[8]===stateSpace[7] & stateSpace[8]===stateSpace[6]){
             match()
