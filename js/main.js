@@ -34,12 +34,12 @@ function run(){
             console.log('Chosen block')
         } else {
             if (turn%2==0){
-                search[i].style.backgroundImage='url(/home/shadows/Documents/wdi4/Project-1-Prompt/assets/x.jpg)';
+                search[i].style.backgroundImage='url(./assets/x.jpg)';
                 search[i].style.backgroundPosition= 'center';
                 search[i].style.backgroundSize='cover';
                 search[i].className=null;
             } else {
-                search[i].style.backgroundImage='url(/home/shadows/Documents/wdi4/Project-1-Prompt/assets/o.jpeg)';
+                search[i].style.backgroundImage='url(./assets/o.jpeg)';
                 search[i].style.backgroundPosition='center';
                 search[i].style.backgroundSize='cover';
                 search[i].className=null;
