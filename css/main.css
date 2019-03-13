@@ -22,7 +22,8 @@ img{
 
 .row div{
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
+    border: solid black 5px;
     background-color: white;
     width: 150px;
     height: 150px;
@@ -50,11 +51,11 @@ header{
     text-align: center;
 }
 
-header .playerx{
+#playerx{
     margin: auto auto auto -550px;
 }
 
-header .playero{
+#playero{
     margin: auto -550px auto auto;
 }
 
@@ -109,3 +110,5 @@ button {
     box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
     background: rgba( 20, 224, 133, 1 );
   }
+
+  

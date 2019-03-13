@@ -1,0 +1,26 @@
+img{
+    width:10%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+section{
+    text-align: center;
+    margin-top: 12%;
+}
+
+footer{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
