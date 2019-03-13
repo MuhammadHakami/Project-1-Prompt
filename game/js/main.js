@@ -8,8 +8,6 @@ var playerx=document.querySelector('#playerx');
 var playero=document.querySelector('#playero');
 
 function reset(event){
-    //document.querySelector('.playerx').innerHTML(`Player X: Scored ${score[1]}`)
-    //document.querySelector('.playero').innerHTML(`Player O: Scored ${score[2]}`)
     turn=0
     event.preventDefault()
     for (i=0;i<9;i++){
