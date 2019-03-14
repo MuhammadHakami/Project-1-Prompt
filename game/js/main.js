@@ -84,6 +84,9 @@ function run(){
             search[i].className=null;
             // Update the current state
             stateSpace[i]=search[i].style.backgroundImage;
+            // Check if the winning requirments is met
+            var s=score[1];
+            checkWinningReq(stateSpace,search);
             // Make a placeholder to hold all possible available states for the bot
             let placeHolder=[];
             for (let key in stateSpace){
@@ -100,8 +103,7 @@ function run(){
 
             // Else let the bot chose a random action
             if (n!==undefined){
-                
-            // Some conditions for the bot
+                        // Some conditions for the bot
             if (0!==stateSpace[0] & stateSpace[0]===stateSpace[1] & 0===stateSpace[2]){
                 n=2
             } else if (0!==stateSpace[0] & stateSpace[0]===stateSpace[3] & 0===stateSpace[6]){
@@ -119,13 +121,17 @@ function run(){
             } else if (0!==stateSpace[8] & stateSpace[8]===stateSpace[5] & 0===stateSpace[2]){
                 n=2
             }
-            search[n].style.backgroundImage='url(./assets/o.jpeg)';
-            search[n].style.backgroundPosition='center';
-            search[n].style.backgroundSize='cover';
-            search[n].className=null;
-            // Check if the winning requirments is met
-            checkWinningReq(stateSpace,search);
+            // check if player 1 didn't  win yet
+            if (s===score[1]){
+                // bot action
+                search[n].style.backgroundImage='url(./assets/o.jpeg)';
+                search[n].style.backgroundPosition='center';
+                search[n].style.backgroundSize='cover';
+                search[n].className=null;
+                // Check if the winning requirments is met
+                checkWinningReq(stateSpace,search);
             }
+        }
         }
         })
     }

@@ -22,6 +22,7 @@ It has an event listener in each block along with reset button and each time a b
 
 The game is essentially bug-free.
 
+
 ## Future Work:
 
 The bot i designed here is a semi-dump one it was essentailly a step to follow it up with the unbeatable bot but i couldn't make it in time, i also wanted to make the first turn to be decided by rock-paper-scissors, game due to the nature of Tic-Tac-Toe the first player has a great advantage so i wanted to balance it.
