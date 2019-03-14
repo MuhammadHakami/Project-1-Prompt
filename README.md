@@ -24,4 +24,6 @@ The game is essentially bug-free.
 
 ## Future Work:
 
-The bot i designed here is a random one it was essentailly a step to follow it up with the unbeatable bot but i couldn't make it in time, i also wanted to make the first turn to be decided by rock-paper-scissors, game due to the nature of Tic-Tac-Toe the first player has a great advantage so i wanted to balance it.
+The bot i designed here is a semi-dump one it was essentailly a step to follow it up with the unbeatable bot but i couldn't make it in time, i also wanted to make the first turn to be decided by rock-paper-scissors, game due to the nature of Tic-Tac-Toe the first player has a great advantage so i wanted to balance it.
+
+I also wanted to make a Reinforcement Learning agent to learning while playing with you and a bar at the left of the page showing its difficulty increases.
