@@ -20,8 +20,7 @@ It has an event listener in each block along with reset button and each time a b
 
 ## Unsolved Problems:
 
-The game is essentially bug-free.
-
+The sound of the waterfall still nead fixing both the sound and when to stop or replay.
 
 ## Future Work:
 
