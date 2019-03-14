@@ -94,9 +94,14 @@ function run(){
             // Randomize the action of the bot
             let n=placeHolder[Math.floor(Math.random()*placeHolder.length)];
             console.log(i+"|||"+placeHolder);
+
             // In-case all the blocks in tic tac toe has been taken reset the game
             (n===undefined)?reset(event):1;
 
+            // Else let the bot chose a random action
+            if (n!==undefined){
+                
+            // Some conditions for the bot
             if (0!==stateSpace[0] & stateSpace[0]===stateSpace[1] & 0===stateSpace[2]){
                 n=2
             } else if (0!==stateSpace[0] & stateSpace[0]===stateSpace[3] & 0===stateSpace[6]){
@@ -114,9 +119,6 @@ function run(){
             } else if (0!==stateSpace[8] & stateSpace[8]===stateSpace[5] & 0===stateSpace[2]){
                 n=2
             }
-
-            // Else let the bot chose a random action
-            if (n!==undefined){
             search[n].style.backgroundImage='url(./assets/o.jpeg)';
             search[n].style.backgroundPosition='center';
             search[n].style.backgroundSize='cover';
